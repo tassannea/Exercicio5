@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudação</title>
+</head>
+<body>
+      <h1>Saudação</h1>
+    <button onclick="inicio()">Clique aqui!</button>
+    <section id="resposta">
+        <p></p>
+    </section>
+
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual o seu nome?');
+            let solucao = document.getElementById('resposta');
+            solucao.innerHTML = `<p>Olá, ${nome}! Seja bem-vindo(a) ao nosso site.</p>`;
+        }
+    </script>
+</body>
+</html>
