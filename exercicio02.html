@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+</head>
+
+<body>
+    <h1>Contador de Cliques</h1>
+    <button onclick="clicar()">Clique</button>
+    <p id="contar">O botão foi clicado 0 vezes.</p>
+
+
+    <script>
+        let contador = 0;
+
+        function clicar() {
+            contador++
+            let clique = document.getElementById('contar');
+            clique.innerHTML = '<p>O botão foi clicado ' + contador + ' vezes.</p>';
+        }
+    </script>
+</body>
+
+</html>
